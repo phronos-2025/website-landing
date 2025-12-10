@@ -1,10 +1,12 @@
 ---
-id: ${file}
-title: Methods Document
-sidebar_label: Methods
+id: data-collection
+title: Data Collection Protocols
+sidebar_label: Data Collection
 ---
 
-# Methods
+# Data Collection Protocols
+
+This section documents our data collection methodology.
 
 Content under development.
 

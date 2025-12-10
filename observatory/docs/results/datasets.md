@@ -1,10 +1,12 @@
 ---
-id: ${file}
-title: Results Document
-sidebar_label: Results
+id: datasets
+title: Research Datasets
+sidebar_label: Datasets
 ---
 
-# Results
+# Research Datasets
+
+This section provides access to our research datasets and documentation.
 
 Content under development.
 

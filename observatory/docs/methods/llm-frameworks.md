@@ -1,10 +1,12 @@
 ---
-id: ${file}
-title: Methods Document
-sidebar_label: Methods
+id: llm-frameworks
+title: LLM Framework Design
+sidebar_label: LLM Frameworks
 ---
 
-# Methods
+# LLM Framework Design
+
+This section documents our approach to designing and implementing LLM constraint frameworks.
 
 Content under development.
 

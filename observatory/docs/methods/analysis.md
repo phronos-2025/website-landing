@@ -1,10 +1,12 @@
 ---
-id: ${file}
-title: Methods Document
-sidebar_label: Methods
+id: analysis
+title: Analysis Methods
+sidebar_label: Analysis
 ---
 
-# Methods
+# Analysis Methods
+
+This section documents our data analysis procedures.
 
 Content under development.
 

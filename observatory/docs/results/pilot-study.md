@@ -1,10 +1,12 @@
 ---
-id: ${file}
-title: Results Document
-sidebar_label: Results
+id: pilot-study
+title: Pilot Study Results
+sidebar_label: Pilot Study
 ---
 
-# Results
+# Pilot Study Results
+
+This section presents findings from our pilot study.
 
 Content under development.
 

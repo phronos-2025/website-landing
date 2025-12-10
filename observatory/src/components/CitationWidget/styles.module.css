@@ -1,0 +1,100 @@
+.citationWidget {
+  border: 2px solid #1A1A1A;
+  background: #F2F0E9;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  font-family: 'Fira Code', monospace;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(26, 26, 26, 0.2);
+}
+
+.title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #1A1A1A;
+}
+
+.doiLink {
+  font-size: 0.7rem;
+  color: #B08D55;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.doiLink:hover {
+  text-decoration: underline;
+}
+
+.formatSelector {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.formatButton {
+  background: transparent;
+  border: 1px solid #1A1A1A;
+  padding: 0.5rem 1rem;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #1A1A1A;
+}
+
+.formatButton:hover {
+  background: rgba(26, 26, 26, 0.05);
+}
+
+.formatButton.active {
+  background: #1A1A1A;
+  color: #F2F0E9;
+}
+
+.citationText {
+  background: #FFFFFF;
+  border: 1px solid rgba(26, 26, 26, 0.2);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  overflow-x: auto;
+}
+
+.citationText pre {
+  margin: 0;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-word;
+  color: #1A1A1A;
+}
+
+.copyButton {
+  background: #1A1A1A;
+  color: #F2F0E9;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+.copyButton:hover {
+  background: #B08D55;
+  color: #1A1A1A;
+}

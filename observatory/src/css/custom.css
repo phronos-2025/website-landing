@@ -1,0 +1,186 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Fira+Code:wght@400;600&display=swap');
+
+:root {
+  /* Observatory Brand Colors */
+  --phronos-paper: #F2F0E9;
+  --phronos-ink: #1A1A1A;
+  --phronos-gold: #B08D55;
+  --phronos-faded: rgba(26, 26, 26, 0.5);
+  --phronos-alert: #CC5544;
+  
+  /* Override Docusaurus defaults */
+  --ifm-color-primary: #B08D55;
+  --ifm-color-primary-dark: #9d7a47;
+  --ifm-color-primary-darker: #937042;
+  --ifm-color-primary-darkest: #785c37;
+  --ifm-color-primary-light: #c3a063;
+  --ifm-color-primary-lighter: #cdaa68;
+  --ifm-color-primary-lightest: #e7c98d;
+  
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  
+  /* Typography */
+  --ifm-font-family-base: 'Cormorant Garamond', serif;
+  --ifm-font-family-monospace: 'Fira Code', monospace;
+  --ifm-heading-font-weight: 400;
+  --ifm-font-size-base: 18px;
+  --ifm-line-height-base: 1.6;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #cdaa68;
+  --ifm-color-primary-dark: #c49c54;
+  --ifm-color-primary-darker: #be9349;
+  --ifm-color-primary-darkest: #9d7a3b;
+  --ifm-color-primary-light: #d6b87c;
+  --ifm-color-primary-lighter: #dcc187;
+  --ifm-color-primary-lightest: #edd9a7;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  
+  --ifm-background-color: #1A1A1A;
+  --ifm-navbar-background-color: #0d0d0d;
+}
+
+/* Custom styling for Observatory aesthetic */
+.navbar {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid var(--ifm-color-emphasis-300);
+}
+
+.navbar__title {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Grid background for main content */
+.main-wrapper {
+  position: relative;
+}
+
+.main-wrapper::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    linear-gradient(rgba(26,26,26,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(26,26,26,0.03) 1px, transparent 1px);
+  background-size: 100px 100px;
+  z-index: -1;
+  pointer-events: none;
+}
+
+[data-theme='dark'] .main-wrapper::before {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+}
+
+/* Enhanced headings */
+.markdown h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid var(--ifm-color-primary);
+  padding-bottom: 0.5rem;
+}
+
+.markdown h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--phronos-ink);
+  border-left: 4px solid var(--ifm-color-primary);
+  padding-left: 1rem;
+}
+
+[data-theme='dark'] .markdown h2 {
+  color: var(--ifm-font-color-base);
+}
+
+.markdown h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  font-family: var(--ifm-font-family-monospace);
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+/* Code blocks */
+.prism-code {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.9rem;
+}
+
+/* Tables */
+.markdown table {
+  border: 2px solid var(--ifm-color-emphasis-300);
+  margin: 2rem 0;
+}
+
+.markdown table th {
+  background: var(--ifm-color-primary);
+  color: white;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0.75rem;
+}
+
+.markdown table td {
+  padding: 0.75rem;
+}
+
+/* Admonitions styling */
+.alert {
+  border-left-width: 4px;
+  font-family: var(--ifm-font-family-base);
+}
+
+.alert--info {
+  border-left-color: var(--ifm-color-primary);
+}
+
+/* Footer */
+.footer {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.85rem;
+  border-top: 2px solid var(--ifm-color-emphasis-300);
+}
+
+/* Sidebar */
+.menu__link {
+  font-size: 0.9rem;
+}
+
+.menu__list-item-collapsible {
+  font-weight: 600;
+}
+
+/* Version badge styling */
+.badge {
+  font-family: var(--ifm-font-family-monospace);
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.5px;
+}
